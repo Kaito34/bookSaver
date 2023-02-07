@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+img2pdf = "*"
+numpy = "*"
+tqdm = "*"
+pyautogui = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

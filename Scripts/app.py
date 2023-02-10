@@ -6,26 +6,40 @@ from tqdm import tqdm
 from PIL import Image
 import numpy as np
 import random
+import argparse
+import yaml
 
 
 def check_position():
-
-    #########################
-    # キャプチャ座標計測
-    #########################
+    """キャプチャ座標計測
+    """
+    
+    loc_dict = {}
 
     # 左上座標を取得
-    print('キャプチャ範囲の左上座標にマウスカーソルを合わせるでやんす')
+    print('キャプチャ範囲の左上座標にマウスカーソルを合わせる')
     time.sleep(3)
-    print('左上座標：' + str(pg.position()))
+    loc = pg.position()
+    print('左上座標：' + str(loc))
+    
+    loc_dict['x1'] = loc[0]
+    loc_dict['y1'] = loc[1]
 
     # １秒待機
     time.sleep(1)
 
     # 右下座標を取得
-    print('キャプチャ範囲の右下座標にマウスカーソルを合わせるでやんす')
+    print('キャプチャ範囲の右下座標にマウスカーソルを合わせる')
     time.sleep(3)
-    print('右下座標：' + str(pg.position()))
+    loc = pg.position()
+    print('右下座標：' + str(loc))
+    
+    loc_dict['x2'] = loc[0]
+    loc_dict['y2'] = loc[1]
+       
+    
+    with open('tmp_data/key_loc.yaml','w') as f:
+        yaml.dump(loc_dict, f)
 
 
 def check_mac_error():
@@ -54,25 +68,28 @@ def img_mse(prev_img_path, img_path):
     return mse_loss
 
 
-def take_screen_shot(page=350, span=1, key_forward='right'):
-    #########################
-    # 変数定義
-    # (環境に応じて変更する)
-    #########################
 
-    # ページ数
-    # page = 350
+def take_screen_shot(page=350, span=1, key_forward='right'):
+    """_summary_
+
+    Args:
+        page (int, optional): ページ数. Defaults to 350.
+        span (int, optional): スクショ間隔. Defaults to 1.
+        key_forward (str, optional): どっち向きにページを進めるか. Defaults to 'right'.
+    """
+
+    with open('tmp_data/key_loc.yaml') as f:
+        loc_dict = yaml.safe_load(f)
+        
     # 取得範囲：左上座標
-    x1, y1 = 964, 105
+    x1, y1 = loc_dict['x1'], loc_dict['y1']
     # 取得範囲：右下座様
-    x2, y2 = 1725, 1119
+    x2, y2 = loc_dict['x2'], loc_dict['y2']
     # mac用に変換
     x1 = x1/0.5
     x2 = x2/0.5
     y1 = y1/0.5
     y2 = y2/0.5
-    # スクショ間隔(秒)
-    # span = 1
     # 出力フォルダ頭文字
     h_foldername = "../data/"
     # 出力ファイル頭文字
@@ -83,6 +100,7 @@ def take_screen_shot(page=350, span=1, key_forward='right'):
     #########################
     # 待機時間５秒
     # (この間にスクショを取得するウィンドウをアクティブにする)
+    print('ウィンドウをアクティブにしてください')
     time.sleep(5)
 
     # 出力フォルダ作成(フォルダ名：頭文字_年月日時分秒)
@@ -132,6 +150,14 @@ def take_screen_shot(page=350, span=1, key_forward='right'):
     print('done')
 
 
-take_screen_shot(page=4000, span=1, key_forward='left')
-# right left
-# check_position()
+def main():
+    """
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--action')
+    args = parser.parse_args()
+    """
+    check_position()
+    take_screen_shot(page=4000, span=1, key_forward='enter')
+
+if __name__ == '__main__':
+    main()

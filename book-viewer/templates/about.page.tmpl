@@ -1,17 +1,493 @@
 {{template "base" .}}
 
 {{define "content"}}
-<div id="main-carousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <!-- <iframe src="/static/pdfs/論点思考.pdf" alt="Woman and laptop"></iframe> /-->
-            <a href="/static/pdfs/論点思考.pdf" alt="Woman and laptop">論点思考</a>
-            <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>        
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <a href="/static/pdfs/100％得する話し方.pdf" target="_blank"><img src="/static/thumbnails/100％得する話し方.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/1分で話せ.pdf" target="_blank"><img src="/static/thumbnails/1分で話せ.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/1分間マネージャーの時間管理.pdf" target="_blank"><img src="/static/thumbnails/1分間マネージャーの時間管理.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/1分間モチベーション.pdf" target="_blank"><img src="/static/thumbnails/1分間モチベーション.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/1時間の仕事を15分で終わらせる.pdf" target="_blank"><img
+                    src="/static/thumbnails/1時間の仕事を15分で終わらせる.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/2軸思考.pdf" target="_blank"><img src="/static/thumbnails/2軸思考.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/30秒で伝える全技術.pdf" target="_blank"><img src="/static/thumbnails/30秒で伝える全技術.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/5W1H.pdf" target="_blank"><img src="/static/thumbnails/5W1H.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/5W1H思考.pdf" target="_blank"><img src="/static/thumbnails/5W1H思考.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/7つのゼロ思考.pdf" target="_blank"><img src="/static/thumbnails/7つのゼロ思考.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/AmazonWebServicesネットワーク入門.pdf" target="_blank"><img
+                    src="/static/thumbnails/AmazonWebServicesネットワーク入門.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/Ansible実践ガイド.pdf" target="_blank"><img src="/static/thumbnails/Ansible実践ガイド.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/AsIsToBeで始める問題発見と課題設定.pdf" target="_blank"><img
+                    src="/static/thumbnails/AsIsToBeで始める問題発見と課題設定.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/Azure実践ガイド.pdf" target="_blank"><img src="/static/thumbnails/Azure実践ガイド.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/brain_driven.pdf" target="_blank"><img src="/static/thumbnails/brain_driven.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/docker2.pdf" target="_blank"><img src="/static/thumbnails/docker2.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/GCPエンタープライズ設計ガイド.pdf" target="_blank"><img
+                    src="/static/thumbnails/GCPエンタープライズ設計ガイド.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/GitLab実践ガイド.pdf" target="_blank"><img src="/static/thumbnails/GitLab実践ガイド.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/GItが面白いほどわかる.pdf" target="_blank"><img src="/static/thumbnails/GItが面白いほどわかる.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/G検定2.pdf" target="_blank"><img src="/static/thumbnails/G検定2.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/Hadoopクラスター構築実践ガイド.pdf" target="_blank"><img
+                    src="/static/thumbnails/Hadoopクラスター構築実践ガイド.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/HarryPotter_ChamberOfSecret.pdf" target="_blank"><img
+                    src="/static/thumbnails/HarryPotter_ChamberOfSecret.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/HarryPotter_GobletOfFire.pdf" target="_blank"><img
+                    src="/static/thumbnails/HarryPotter_GobletOfFire.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/HarryPotter_HalfbloodPrince.pdf" target="_blank"><img
+                    src="/static/thumbnails/HarryPotter_HalfbloodPrince.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/HarryPotter_OrderOfThePhoenix.pdf" target="_blank"><img
+                    src="/static/thumbnails/HarryPotter_OrderOfThePhoenix.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/HarryPotter_PhilosophersStone.pdf" target="_blank"><img
+                    src="/static/thumbnails/HarryPotter_PhilosophersStone.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/HarryPotter_PrisonerOfAzkaban.pdf" target="_blank"><img
+                    src="/static/thumbnails/HarryPotter_PrisonerOfAzkaban.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/ITアーキテクチャ構築入門.pdf" target="_blank"><img src="/static/thumbnails/ITアーキテクチャ構築入門.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/Javaから楽しく学ぶゲームプログラミング専門学校.pdf" target="_blank"><img
+                    src="/static/thumbnails/Javaから楽しく学ぶゲームプログラミング専門学校.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/jQuery入門道場.pdf" target="_blank"><img src="/static/thumbnails/jQuery入門道場.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/Linuxコマンドライン入門1日目.pdf" target="_blank"><img
+                    src="/static/thumbnails/Linuxコマンドライン入門1日目.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/nginx実践ガイド.pdf" target="_blank"><img src="/static/thumbnails/nginx実践ガイド.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/Oauthを使うためのチュートリアルガイド.pdf" target="_blank"><img
+                    src="/static/thumbnails/Oauthを使うためのチュートリアルガイド.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/PMBOKが教えない成功の法則.pdf" target="_blank"><img
+                    src="/static/thumbnails/PMBOKが教えない成功の法則.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/Pythonの文法を覚えた人がもっと理解を深めるための本.pdf" target="_blank"><img
+                    src="/static/thumbnails/Pythonの文法を覚えた人がもっと理解を深めるための本.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/ReactNative入門.pdf" target="_blank"><img src="/static/thumbnails/ReactNative入門.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/Rustで始めるネットワークプログラミング.pdf" target="_blank"><img
+                    src="/static/thumbnails/Rustで始めるネットワークプログラミング.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/SEノウハウ要件定義編.pdf" target="_blank"><img src="/static/thumbnails/SEノウハウ要件定義編.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/SpringBoot2入門.pdf" target="_blank"><img src="/static/thumbnails/SpringBoot2入門.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/SpringBoot2応用.pdf" target="_blank"><img src="/static/thumbnails/SpringBoot2応用.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/Spring解体新書2.pdf" target="_blank"><img src="/static/thumbnails/Spring解体新書2.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/StrategicITマネージャー.pdf" target="_blank"><img
+                    src="/static/thumbnails/StrategicITマネージャー.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/TCPIPの基礎.pdf" target="_blank"><img src="/static/thumbnails/TCPIPの基礎.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/TCPIPネットワーク入門.pdf" target="_blank"><img src="/static/thumbnails/TCPIPネットワーク入門.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/Think Clearly.pdf" target="_blank"><img src="/static/thumbnails/Think Clearly.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/Vimコマンド集.pdf" target="_blank"><img src="/static/thumbnails/Vimコマンド集.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/windowsAzureWordpress入門.pdf" target="_blank"><img
+                    src="/static/thumbnails/windowsAzureWordpress入門.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/WindowsAzureWordPress超入門.pdf" target="_blank"><img
+                    src="/static/thumbnails/WindowsAzureWordPress超入門.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/「知力」をつくる技術.pdf" target="_blank"><img src="/static/thumbnails/「知力」をつくる技術.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/この一冊で合格！AWSテキスト問題集.pdf" target="_blank"><img
+                    src="/static/thumbnails/この一冊で合格！AWSテキスト問題集.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/すぐやる力で差をつける.pdf" target="_blank"><img src="/static/thumbnails/すぐやる力で差をつける.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/すぐやる！今やる！.pdf" target="_blank"><img src="/static/thumbnails/すぐやる！今やる！.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/すぐやる！行動力を高める科学的な方法.pdf" target="_blank"><img
+                    src="/static/thumbnails/すぐやる！行動力を高める科学的な方法.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/なぜあなたのやる気が出ないのか.pdf" target="_blank"><img
+                    src="/static/thumbnails/なぜあなたのやる気が出ないのか.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/なぜあなたの仕事は終わらないのか.pdf" target="_blank"><img
+                    src="/static/thumbnails/なぜあなたの仕事は終わらないのか.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/なぜシステム開発は必ずもめるのか.pdf" target="_blank"><img
+                    src="/static/thumbnails/なぜシステム開発は必ずもめるのか.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/はじめてつくるGatsbyサイト.pdf" target="_blank"><img
+                    src="/static/thumbnails/はじめてつくるGatsbyサイト.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/はじめてのLinuxパーフェクトガイド.pdf" target="_blank"><img
+                    src="/static/thumbnails/はじめてのLinuxパーフェクトガイド.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/はじめての上流工程.pdf" target="_blank"><img src="/static/thumbnails/はじめての上流工程.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/ひと目で伝わるプレゼン資料の全知識.pdf" target="_blank"><img
+                    src="/static/thumbnails/ひと目で伝わるプレゼン資料の全知識.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/ふだん使いのフレームワーク思考.pdf" target="_blank"><img
+                    src="/static/thumbnails/ふだん使いのフレームワーク思考.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/やさしく学べるwebComponents.pdf" target="_blank"><img
+                    src="/static/thumbnails/やさしく学べるwebComponents.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/やばい集中力.pdf" target="_blank"><img src="/static/thumbnails/やばい集中力.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/やる気が出なくて仕事が嫌になったときに読む本.pdf" target="_blank"><img
+                    src="/static/thumbnails/やる気が出なくて仕事が嫌になったときに読む本.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/やる気に頼らずすぐやる人になる37のコツ.pdf" target="_blank"><img
+                    src="/static/thumbnails/やる気に頼らずすぐやる人になる37のコツ.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/わかったつもり読解力がつかない本当の原因.pdf" target="_blank"><img
+                    src="/static/thumbnails/わかったつもり読解力がつかない本当の原因.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/わかっているけど動けない人のための自分を瞬時に動かす最強の方法.pdf" target="_blank"><img
+                    src="/static/thumbnails/わかっているけど動けない人のための自分を瞬時に動かす最強の方法.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/アジャイルサムライ.pdf" target="_blank"><img src="/static/thumbnails/アジャイルサムライ.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/アジャイル開発の教本.pdf" target="_blank"><img src="/static/thumbnails/アジャイル開発の教本.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/イシューから始めよ.pdf" target="_blank"><img src="/static/thumbnails/イシューから始めよ.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/Dockerに手を出そうとして.pdf" target="_blank"><img
+                    src="/static/thumbnails/Dockerに手を出そうとして.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/kaggleのチュートリアル.pdf" target="_blank"><img src="/static/thumbnails/kaggleのチュートリアル.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/TypeScript最速の入門書.pdf" target="_blank"><img
+                    src="/static/thumbnails/TypeScript最速の入門書.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/オブジェクト指向.pdf" target="_blank"><img src="/static/thumbnails/オブジェクト指向.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/ビジネスフレームワーク300.pdf" target="_blank"><img src="/static/thumbnails/ビジネスフレームワーク300.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/一生食えるプロのPDCA.pdf" target="_blank"><img src="/static/thumbnails/一生食えるプロのPDCA.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/図解する思考法基礎編.pdf" target="_blank"><img src="/static/thumbnails/図解する思考法基礎編.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/最強のデータ分析組織.pdf" target="_blank"><img src="/static/thumbnails/最強のデータ分析組織.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/絵文字の技術.pdf" target="_blank"><img src="/static/thumbnails/絵文字の技術.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/クリーンな開発環境.pdf" target="_blank"><img src="/static/thumbnails/クリーンな開発環境.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/クリーンアーキテクチャとサーバレスで実装するWebAPI.pdf" target="_blank"><img
+                    src="/static/thumbnails/クリーンアーキテクチャとサーバレスで実装するWebAPI.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/コンサルを超える問題解決と価値創造の全技法.pdf" target="_blank"><img
+                    src="/static/thumbnails/コンサルを超える問題解決と価値創造の全技法.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/コンサル一年目が学ぶこと.pdf" target="_blank"><img src="/static/thumbnails/コンサル一年目が学ぶこと.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/コンセプト力でプロジェクトを動かす.pdf" target="_blank"><img
+                    src="/static/thumbnails/コンセプト力でプロジェクトを動かす.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/スマートPythonプログラミング.pdf" target="_blank"><img
+                    src="/static/thumbnails/スマートPythonプログラミング.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/セキュリティプロトコル.pdf" target="_blank"><img src="/static/thumbnails/セキュリティプロトコル.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/セキュリティ設計実践ノウハウ.pdf" target="_blank"><img src="/static/thumbnails/セキュリティ設計実践ノウハウ.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/チャートで考えればうまくいく.pdf" target="_blank"><img src="/static/thumbnails/チャートで考えればうまくいく.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/データマネジメントが30分でわかる本.pdf" target="_blank"><img
+                    src="/static/thumbnails/データマネジメントが30分でわかる本.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/トップ5%社員の習慣.pdf" target="_blank"><img src="/static/thumbnails/トップ5%社員の習慣.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/トラブル知らずのシステム設計.pdf" target="_blank"><img src="/static/thumbnails/トラブル知らずのシステム設計.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/ドイツ電撃.pdf" target="_blank"><img src="/static/thumbnails/ドイツ電撃.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/ドメイン駆動設計入門.pdf" target="_blank"><img src="/static/thumbnails/ドメイン駆動設計入門.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/ネットワークの基本.pdf" target="_blank"><img src="/static/thumbnails/ネットワークの基本.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/ネットワーク運用管理の教科書.pdf" target="_blank"><img src="/static/thumbnails/ネットワーク運用管理の教科書.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/ビジネス大学クリティカルシンキング.pdf" target="_blank"><img
+                    src="/static/thumbnails/ビジネス大学クリティカルシンキング.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/ビジネス大学ファシリテーション.pdf" target="_blank"><img
+                    src="/static/thumbnails/ビジネス大学ファシリテーション.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/ビジネス大学マーケティング.pdf" target="_blank"><img src="/static/thumbnails/ビジネス大学マーケティング.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/ビジネス大学仮説思考.pdf" target="_blank"><img src="/static/thumbnails/ビジネス大学仮説思考.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/ファシリテーション超技術.pdf" target="_blank"><img src="/static/thumbnails/ファシリテーション超技術.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/プリンシプルオブプログラミング.pdf" target="_blank"><img
+                    src="/static/thumbnails/プリンシプルオブプログラミング.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/プロの思考整理術.pdf" target="_blank"><img src="/static/thumbnails/プロの思考整理術.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/プログラミング経験者がGo言語を本格的に勉強する前に読むための本.pdf" target="_blank"><img
+                    src="/static/thumbnails/プログラミング経験者がGo言語を本格的に勉強する前に読むための本.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/プロジェクト実行ガイド大全.pdf" target="_blank"><img src="/static/thumbnails/プロジェクト実行ガイド大全.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/ヘタレの働き方.pdf" target="_blank"><img src="/static/thumbnails/ヘタレの働き方.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/マインドセット.pdf" target="_blank"><img src="/static/thumbnails/マインドセット.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/マッキンゼーのエリートはノートに何を書いているのか.pdf" target="_blank"><img
+                    src="/static/thumbnails/マッキンゼーのエリートはノートに何を書いているのか.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/リーダーが育つ変革プロジェクトの教科書.pdf" target="_blank"><img
+                    src="/static/thumbnails/リーダーが育つ変革プロジェクトの教科書.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/レベルアップJava2.pdf" target="_blank"><img src="/static/thumbnails/レベルアップJava2.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/ロジカルな話し方超入門.pdf" target="_blank"><img src="/static/thumbnails/ロジカルな話し方超入門.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/ロジカルシンキング.pdf" target="_blank"><img src="/static/thumbnails/ロジカルシンキング.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/ロスコストマネジメント.pdf" target="_blank"><img src="/static/thumbnails/ロスコストマネジメント.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/一番伝わる説明の順番.pdf" target="_blank"><img src="/static/thumbnails/一番伝わる説明の順番.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/一瞬で大切なことを伝える技術.pdf" target="_blank"><img src="/static/thumbnails/一瞬で大切なことを伝える技術.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/一瞬で大切なことを決める技術.pdf" target="_blank"><img src="/static/thumbnails/一瞬で大切なことを決める技術.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/万年筆で人生を切り拓く.pdf" target="_blank"><img src="/static/thumbnails/万年筆で人生を切り拓く.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/予定通り進まないプロジェクトの進め方.pdf" target="_blank"><img
+                    src="/static/thumbnails/予定通り進まないプロジェクトの進め方.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/人は話し方が9割.pdf" target="_blank"><img src="/static/thumbnails/人は話し方が9割.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/人工知能は人間を越えるか.pdf" target="_blank"><img src="/static/thumbnails/人工知能は人間を越えるか.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/人生がうまくいく人は図で考える.pdf" target="_blank"><img
+                    src="/static/thumbnails/人生がうまくいく人は図で考える.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/人生戦略の教科書.pdf" target="_blank"><img src="/static/thumbnails/人生戦略の教科書.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/人生講座講座.pdf" target="_blank"><img src="/static/thumbnails/人生講座講座.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/人財育成の教科書.pdf" target="_blank"><img src="/static/thumbnails/人財育成の教科書.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/今すぐ使える用件定義のヒアリングリスト.pdf" target="_blank"><img
+                    src="/static/thumbnails/今すぐ使える用件定義のヒアリングリスト.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/仕事が速いのに.pdf" target="_blank"><img src="/static/thumbnails/仕事が速いのに.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/仕事の問題は30秒で解決できる.pdf" target="_blank"><img
+                    src="/static/thumbnails/仕事の問題は30秒で解決できる.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/仮説思考.pdf" target="_blank"><img src="/static/thumbnails/仮説思考.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/伝わる揺さぶる文章を書く.pdf" target="_blank"><img src="/static/thumbnails/伝わる揺さぶる文章を書く.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/先送りせずにすぐやる人に変わる方法.pdf" target="_blank"><img
+                    src="/static/thumbnails/先送りせずにすぐやる人に変わる方法.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/入門地頭力を鍛える.pdf" target="_blank"><img src="/static/thumbnails/入門地頭力を鍛える.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/全思考法カタログ.pdf" target="_blank"><img src="/static/thumbnails/全思考法カタログ.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/初めて作るreactアプリ.pdf" target="_blank"><img src="/static/thumbnails/初めて作るreactアプリ.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/副業のための図解表現力.pdf" target="_blank"><img src="/static/thumbnails/副業のための図解表現力.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/厳選フレームワーク20.pdf" target="_blank"><img src="/static/thumbnails/厳選フレームワーク20.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/問題がすっきり解決！図解思考の本.pdf" target="_blank"><img
+                    src="/static/thumbnails/問題がすっきり解決！図解思考の本.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/問題がスッキリ解決！図解思考の本.pdf" target="_blank"><img
+                    src="/static/thumbnails/問題がスッキリ解決！図解思考の本.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/最強の勉強法究極の鉄則編.pdf" target="_blank"><img src="/static/thumbnails/最強の勉強法究極の鉄則編.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/最強の意思決定.pdf" target="_blank"><img src="/static/thumbnails/最強の意思決定.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/朝やること.pdf" target="_blank"><img src="/static/thumbnails/朝やること.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/未経験者のためのMySQL超入門.pdf" target="_blank"><img
+                    src="/static/thumbnails/未経験者のためのMySQL超入門.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/東大ドクター流やる気と集中力を引き出す技術.pdf" target="_blank"><img
+                    src="/static/thumbnails/東大ドクター流やる気と集中力を引き出す技術.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/深く速く考える.pdf" target="_blank"><img src="/static/thumbnails/深く速く考える.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/濃縮睡眠メソッド.pdf" target="_blank"><img src="/static/thumbnails/濃縮睡眠メソッド.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/無線LAN技術最強の指南書.pdf" target="_blank"><img src="/static/thumbnails/無線LAN技術最強の指南書.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/猿でもわかるGIT入門.pdf" target="_blank"><img src="/static/thumbnails/猿でもわかるGIT入門.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/痛いコンサルすごいコンサル.pdf" target="_blank"><img src="/static/thumbnails/痛いコンサルすごいコンサル.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/目標達成できる「1日ルーティン」の作り方.pdf" target="_blank"><img
+                    src="/static/thumbnails/目標達成できる「1日ルーティン」の作り方.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/瞬間フレームワーク.pdf" target="_blank"><img src="/static/thumbnails/瞬間フレームワーク.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/神速仕事術40.pdf" target="_blank"><img src="/static/thumbnails/神速仕事術40.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/私が意識し続けている19の思考.pdf" target="_blank"><img
+                    src="/static/thumbnails/私が意識し続けている19の思考.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/箇条書き手帳でうまくいく.pdf" target="_blank"><img src="/static/thumbnails/箇条書き手帳でうまくいく.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/管理職になったら読む本.pdf" target="_blank"><img src="/static/thumbnails/管理職になったら読む本.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/統計モデリング入門.pdf" target="_blank"><img src="/static/thumbnails/統計モデリング入門.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/統計学入門.pdf" target="_blank"><img src="/static/thumbnails/統計学入門.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/図解する思考法実践編.pdf" target="_blank"><img src="/static/thumbnails/図解する思考法実践編.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/図解の教科書.pdf" target="_blank"><img src="/static/thumbnails/図解の教科書.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/図解コンサル一年目が学ぶこと.pdf" target="_blank"><img src="/static/thumbnails/図解コンサル一年目が学ぶこと.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/図解人材マネジメント入門.pdf" target="_blank"><img src="/static/thumbnails/図解人材マネジメント入門.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/図解作成.pdf" target="_blank"><img src="/static/thumbnails/図解作成.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/図解思考の会議.pdf" target="_blank"><img src="/static/thumbnails/図解思考の会議.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/地頭力を鍛える.pdf" target="_blank"><img src="/static/thumbnails/地頭力を鍛える.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/地頭力を鍛えるフェルミ推定ノート.pdf" target="_blank"><img
+                    src="/static/thumbnails/地頭力を鍛えるフェルミ推定ノート.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/基礎からのネットワークサーバー構築.pdf" target="_blank"><img
+                    src="/static/thumbnails/基礎からのネットワークサーバー構築.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/基礎から始めるGraphQL.pdf" target="_blank"><img src="/static/thumbnails/基礎から始めるGraphQL.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/外資系コンサルの知的生産術.pdf" target="_blank"><img src="/static/thumbnails/外資系コンサルの知的生産術.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/大学院研究員勤の人が使える効率的研究方法.pdf" target="_blank"><img
+                    src="/static/thumbnails/大学院研究員勤の人が使える効率的研究方法.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/大急ぎでJavaの文法を思い出さなければならない時に一気に読む本.pdf" target="_blank"><img
+                    src="/static/thumbnails/大急ぎでJavaの文法を思い出さなければならない時に一気に読む本.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/天使に教わる勝ち残るプロマネ.pdf" target="_blank"><img src="/static/thumbnails/天使に教わる勝ち残るプロマネ.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/学び効率が最大化するインプット大全.pdf" target="_blank"><img
+                    src="/static/thumbnails/学び効率が最大化するインプット大全.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/居心地の良い部屋の作り方.pdf" target="_blank"><img src="/static/thumbnails/居心地の良い部屋の作り方.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/思考の法則.pdf" target="_blank"><img src="/static/thumbnails/思考の法則.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/意思決定のための分析の技術.pdf" target="_blank"><img src="/static/thumbnails/意思決定のための分析の技術.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/成長する管理職.pdf" target="_blank"><img src="/static/thumbnails/成長する管理職.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/戦略脳を鍛える.pdf" target="_blank"><img src="/static/thumbnails/戦略脳を鍛える.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/最強のエンジニアになるためのプレゼンの教科書.pdf" target="_blank"><img
+                    src="/static/thumbnails/最強のエンジニアになるためのプレゼンの教科書.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/最強のエンジニアになるための話し方の教科書.pdf" target="_blank"><img
+                    src="/static/thumbnails/最強のエンジニアになるための話し方の教科書.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/習慣が10割.pdf" target="_blank"><img src="/static/thumbnails/習慣が10割.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/考える技術書く技術.pdf" target="_blank"><img src="/static/thumbnails/考える技術書く技術.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/考えを整理する技術伝える技術.pdf" target="_blank"><img src="/static/thumbnails/考えを整理する技術伝える技術.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/耳読書.pdf" target="_blank"><img src="/static/thumbnails/耳読書.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/聞き方一つで面白いほど仕事がうまくいく本.pdf" target="_blank"><img
+                    src="/static/thumbnails/聞き方一つで面白いほど仕事がうまくいく本.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/自分ルールを改正すれば人は勝手に行動する.pdf" target="_blank"><img
+                    src="/static/thumbnails/自分ルールを改正すれば人は勝手に行動する.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/見通し不安なプロジェクト.pdf" target="_blank"><img src="/static/thumbnails/見通し不安なプロジェクト.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/誰も教えてくれないプロジェクトマネジメント.pdf" target="_blank"><img
+                    src="/static/thumbnails/誰も教えてくれないプロジェクトマネジメント.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/課題解決のための情報収集力.pdf" target="_blank"><img src="/static/thumbnails/課題解決のための情報収集力.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/課題解決のための情報収集術.pdf" target="_blank"><img src="/static/thumbnails/課題解決のための情報収集術.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/論点思考.pdf" target="_blank"><img src="/static/thumbnails/論点思考.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/超仮説思考.pdf" target="_blank"><img src="/static/thumbnails/超仮説思考.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/超知的生産術.pdf" target="_blank"><img src="/static/thumbnails/超知的生産術.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/超雑談力.pdf" target="_blank"><img src="/static/thumbnails/超雑談力.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/逆説思考自分の頭をどう疑うか.pdf" target="_blank"><img src="/static/thumbnails/逆説思考自分の頭をどう疑うか.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/速習Python3中.pdf" target="_blank"><img src="/static/thumbnails/速習Python3中.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/速習Vue.pdf" target="_blank"><img src="/static/thumbnails/速習Vue.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/部屋作りのアイデア帳.pdf" target="_blank"><img src="/static/thumbnails/部屋作りのアイデア帳.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/頭がいいの正体は読解力.pdf" target="_blank"><img src="/static/thumbnails/頭がいいの正体は読解力.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/頭が良くなる図解思考の技術.pdf" target="_blank"><img src="/static/thumbnails/頭が良くなる図解思考の技術.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/頭が良くなる眠り方.pdf" target="_blank"><img src="/static/thumbnails/頭が良くなる眠り方.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/頭のいい人は図解思考で考える.pdf" target="_blank"><img src="/static/thumbnails/頭のいい人は図解思考で考える.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/頭のゴミを捨てれば、脳は一瞬で目覚める.pdf" target="_blank"><img
+                    src="/static/thumbnails/頭のゴミを捨てれば、脳は一瞬で目覚める.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/頭の良い説明すぐできるコツ.pdf" target="_blank"><img src="/static/thumbnails/頭の良い説明すぐできるコツ.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/頭を鍛える5つの習慣.pdf" target="_blank"><img src="/static/thumbnails/頭を鍛える5つの習慣.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+            <a href="/static/pdfs/鬼速.pdf" target="_blank"><img src="/static/thumbnails/鬼速.jpeg"
+                    class="img-fluid img-thumbnail img-responsive mx-auto d-block w-50"></a>
+        </div>
     </div>
+
 </div>
 
+{{end}}
+
+{{define "js"}}
+<script>
+
+</script>
 {{end}}

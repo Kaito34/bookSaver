@@ -56,6 +56,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/about">About</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about2">About2</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -134,7 +137,7 @@
             }, false);
         })();
 
-        
+
 
         function notify(msg, msgType) {
             notie.alert({
@@ -152,17 +155,38 @@
             })
         }
 
-        {{with .Error}}
-        nofity("{{.}}", "error")
-        {{end}}
+        {
+            {
+                with.Error
+            }
+        }
+        nofity("{{.}}", "error") {
+            {
+                end
+            }
+        }
 
-        {{with .Flash}}
-        nofity("{{.}}", "success")
-        {{end}}
+        {
+            {
+                with.Flash
+            }
+        }
+        nofity("{{.}}", "success") {
+            {
+                end
+            }
+        }
 
-        {{with .Warning}}
-        nofity("{{.}}", "warning")
-        {{end}}
+        {
+            {
+                with.Warning
+            }
+        }
+        nofity("{{.}}", "warning") {
+            {
+                end
+            }
+        }
 
         function Prompt() {
             let toast = function (c) {
@@ -225,7 +249,7 @@
             async function custom(c) {
                 const {
                     msg = "",
-                    title = "",
+                        title = "",
                 } = c;
 
                 const {
@@ -239,12 +263,12 @@
                     willOpen: () => {
                         if (c.willOpen !== undefined) {
                             c.willOpen();
-                        } 
+                        }
                     },
                     didOpen: () => {
                         if (c.didOpen !== undefined) {
                             c.didOpen();
-                        } 
+                        }
                     },
                     preConfirm: () => {
                         return [
@@ -253,7 +277,7 @@
                         ]
                     }
                 })
-                
+
                 if (result) {
                     if (result.dismiss !== Swal.DismissReason.cancel) {
                         if (result.value !== "") {

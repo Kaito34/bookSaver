@@ -8,6 +8,8 @@ img2pdf = "*"
 numpy = "*"
 tqdm = "*"
 pyautogui = "*"
+pdf2image = "*"
+pyperclip = "*"
 
 [dev-packages]
 
